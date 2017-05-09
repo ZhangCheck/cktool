@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>EasyUI Accordion</title>
+    <link rel="stylesheet" href="hnstyle/css/reset.css" merge="No"/>
+    <link rel="stylesheet" href="hnstyle/css/base.css" merge="No"/>
+    <link rel="stylesheet" href="hnstyle/css/layout.css" merge="No"/>
+    <link rel="stylesheet" href="hnstyle/heNan.css" merge="No"/>
+    <meta folder src="hnstyle/images">
+
+    <link rel="stylesheet" type="text/css" href="Easyui/themes/easyui.css" merge="No">
+    <link rel="stylesheet" type="text/css" href="Easyui/themes/icon.css" merge="No">
+    <script src="Easyui/jquery.min.js" merge="No"></script>
+    <script src="Easyui/jquery.easyui.min.js" merge="No"></script>
+    <script src="Easyui/locale/easyui-lang-zh_CN.js" merge="No"></script>
+
+    <meta folder src="hnstyle/images">
+    <meta folder src="Easyui/themes/images">
+    <meta folder src="Easyui/themes/icons">
+</head>
+<body>
+<div viewCk></div>
+
+<xmp templateCk></xmp>
+
+<div argumentCk>
+    <h3>Argument Panel</h3>
+    <link rel="stylesheet" href="css/ckArgPanel.css">
+
+    <div class="argGlobalBts">
+        <div class="argBtn" id="normalBt">reset</div>
+        <div class="argBtn" id="codeBtn">view code</div>
+    </div>
+
+    <div>
+        <h4>accordion</h4>
+        <div class="argBtn" id="fluidBtn">fluid</div>
+    </div>
+
+    <div>
+        <h4>panel</h4>
+        <div>selected panel:<span id="panelId">0</span></div>
+        <div class="argBtn" id="expandableBt">expandable</div>
+        <div class="argBtn" id="toolBt">tool</div>
+    </div>
+</div>
+
+<textarea codeCk>
+    <div class="easyui-accordion" style="width:500px;height:300px;">
+        <div title="About" data-options="iconCls:'icon-ok'" style="overflow:auto;padding:10px;">
+            <h3 style="color:#0099FF;">Accordion for jQuery</h3>
+            <p>Accordion is a part of easyui framework for jQuery. It lets you define your accordion component on web page more easily.</p>
+        </div>
+        <div title="Help" data-options="iconCls:'icon-help'" style="padding:10px;">
+            <p>The accordion allows you to provide multiple panels and display one or more at a time. Each panel has built-in support for expanding and collapsing. Clicking on a panel header to expand or collapse that panel body. The panel content can be loaded via ajax by specifying a 'href' property. Users can define a panel to be selected. If it is not specified, then the first panel is taken by default.</p>
+        </div>
+        <div title="TreeMenu" data-options="iconCls:'icon-search'" style="padding:10px;">
+            <ul class="easyui-tree">
+                <li>
+                    <span>Foods</span>
+                    <ul>
+                        <li>
+                            <span>Fruits</span>
+                            <ul>
+                                <li>apple</li>
+                                <li>orange</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Vegetables</span>
+                            <ul>
+                                <li>tomato</li>
+                                <li>carrot</li>
+                                <li>cabbage</li>
+                                <li>potato</li>
+                                <li>lettuce</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</textarea>
+
+<script src="js/argumentCkAsDom.js"></script>
+<script>
+    (function(){
+        //selected panel index
+        var curPanel = 0;
+
+        //view callback
+        toolCk.initView = function(){
+            toolCk.getView().find('.easyui-accordion').accordion();
+            toolCk.getView().find('.easyui-tree').tree();
+            toolCk.getView().find('.panel-header').click(function(){
+                curPanel = $(this).parent().index();
+                $('#panelId').text(curPanel);
+            })
+        }
+
+        //show view
+        toolCk.freshView();
+
+        //property panel control
+
+
+        $( '#expandableBt').click(function(){
+            toolCk.appendEasyOptions(toolCk.getCode().find('.easyui-accordion>div').eq(curPanel), 'collapsed:false,collapsible:false');
+        })
+
+        $('#fluidBtn').click(function(){
+            toolCk.getCode().find('.easyui-accordion').css({width:"100%"});
+            toolCk.freshView();
+        })
+
+        $( '#toolBt').click(function(){
+            toolCk.appendEasyOptions(toolCk.getCode().find('.easyui-accordion>div').eq(curPanel), "tools:[{iconCls:'icon-reload',handler:function(){ $('#dg').datagrid('reload'); } }]");
+        })
+
+    })();
+
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+.ckcss,.ckcss *{box-sizing: border-box;}
+.ckcss{
+  font-family: "Î¢ÈíÑÅºÚ";font-size:14px;
+  .pull-left{float:left;}
+  .pull-right{float:right;}
+  .clearfix() {
+    &:before,
+    &:after {
+      content: " ";
+      display: table;
+    }
+    &:after {
+      clear: both;
+    }
+  }
+
+  .show {
+    display: block !important;
+  }
+  .hidden {
+    display: none !important;
+  }
+  .invisible {
+    visibility: hidden;
+  }
+  .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+}
+@import "ckcss.less";

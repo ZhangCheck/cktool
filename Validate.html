@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Validate</title>
+    <link rel="stylesheet" href="css/bootstrapOffical.css"/>
+    <link rel="stylesheet" href="css/ckcss.less"/>
+
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/jcs-auto-validate.js" eraseble="true"></script>
+    <script src="js/ValidateDemo.js" eraseble="true" merge="project"></script>
+</head>
+<body>
+<h3>Validate</h3>
+<div codeCk>
+    <div class="row" ng-controller="demoCtrl">
+        <div class="col-sm-8 col-sm-offset-1">
+            <p>
+                <button type="button" class="btn btn-primary" ng-click="toggleBS3Icons();">Toggle Validation State Icons</button>
+            </p>
+            <form role="form" name="testFrm" novalidate="novalidate"
+                  ng-submit="submit();"
+                  validate-non-visible-controls
+                  disable-dynamic-validatio_n>
+                <button type="button" class="btn btn-primary" ng-click="setExternalError(testFrm);">Set External Error On Firstname</button>
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <input type="text" name="firstname" style="display: block;" class="form-control" placeholder="Enter Your Name" ng-model="user.name" required="required" ng-required-err-type="nameRequired"/>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Name</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="glyphicon glyphicon-envelope"></i>
+                        </span>
+                        <input type="email" name="email" class="form-control"
+                               ng-model="user.email"
+                               placeholder="Enter email address"
+                               ng-required="true"/>
+
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Email address - <small>Element with a custom element modifier (see source code)</small></label>
+                    <input type="email" class="form-control" placeholder="Enter email" ng-model="user.email" required="required" element-modifier="myCustomModifierKey"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Password - <small>Element with validation happening on blur rather than change</small></label>
+                    <input type="password" class="form-control" ng-model="user.password" placeholder="Password" required="required" ng-minlength="6" ng-model-options="{updateOn: 'blur'}"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Robot Test: Please spell Angular. - <small>Custom validation</small></label>
+                    <input type="text" class="form-control" placeholder="Enter The Word Angular" ng-model="user.iq" mustcontainword="angular"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Regex Pattern Only Letters</label>
+                    <input type="text" class="form-control" placeholder="Enter Only Letters..." ng-model="user.letters" ng-pattern="/[a-zA-Z]/"/>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Is User Active?
+                        <input type="checkbox" class="form-control"  ng-model="user.isActive" /></label>
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Input with no validation</label>
+                    <input type="text" class="form-control" placeholder="Enter The Word Angular" ng-model="user.noValidation" />
+                </div>
+
+                <div class="form-group">
+                    <label class="control-label">Valid Styling disabled</label>
+                    <input type="text" class="form-control" required ng-model="user.someProperty" disable-invalid-styling="true" />
+                </div>
+
+                <ng-form name="childForm">
+                    <div class="form-group">
+                        <label class="control-label">Nickname</label>
+                        <input type="text" class="form-control" name="Nickname" placeholder="Enter Nickname" ng-model="user.Nickname" required="required" ng-minlength="4">
+                    </div>
+                </ng-form>
+
+                <button type="submit" class="btn btn-default">Submit</button>
+                <button type="reset" class="btn btn-default">Reset</button>
+            </form>
+        </div>
+    </div>
+</div>
+<h3>Document</h3>
+<a href="https://jonsamwell.github.io/angular-auto-validate">OfficalSite</a>
+</body>
+</html>

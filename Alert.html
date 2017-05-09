@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Alert</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/alerts.css"/>
+    <link rel="stylesheet" href="css/close.css"/>
+
+    <script src="js/angular.js"  merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Alert.js" eraseble="true"></script>
+    <script src="js/AlertDemo.js" eraseble="true" merge="project"></script>
+</head>
+<body>
+<h3>Alert</h3>
+<div codeCk>
+    <div ng-controller="AlertDemoCtrl">
+        <alert ng-repeat="alert in alerts" type="{{alert.type}}" close="closeAlert($index)">{{alert.msg}}</alert>
+        <button class='btn btn-default' ng-click="addAlert()">Add Alert</button>
+    </div>
+
+</div>
+</body>
+</html>

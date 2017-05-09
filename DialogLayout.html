@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Dialog</title>
+    <link rel="stylesheet" href="css/CKCSS.css" merge="Main"/>
+
+    <script src="js/CKCSS.js" merge="Main"></script>
+    <style>
+        .popupWin{position:fixed;bottom:0;top:0;right: 0;left: 0;background: rgba(0, 0, 0, 0.5);z-index: 10000;display:none;text-align: center}
+        .popupWin>.pw-win{width:600px;min-height: 200px;background: #30a1e6;}
+        .popupWin>.pw-win>div{text-align: left}
+        .popupWin .pw-close{background: #efd457;cursor:pointer;width:20px;height: 20px;float:right;}
+    </style>
+    <script>
+        $(function(){
+            $('.pw-close').click(function(){
+                $(this).parents('.popupWin').hide();
+            })
+        })
+    </script>
+</head>
+<body>
+<div codeCk>
+    <div class="popupWin inlineMiddles" id="popTest">
+        <div class="pw-win">
+            <div class="pw-close">X</div>
+            <div class="pw-title pdSm">title</div>
+            <div class="pw-content pd">
+                content
+            </div>
+        </div>
+    </div>
+    <!-- for test -->
+    <style>#popTest{display:block;}</style>
+    <!-- for test end -->
+</div>
+
+</body>
+</html>

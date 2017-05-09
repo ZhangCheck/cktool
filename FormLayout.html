@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>FormLayout</title>
+    <link rel="stylesheet" href="css/Core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/ckcss.css" merge="Main"/>
+
+    <style>
+        .form{display: table;width:100%;}
+        .form>div,.form>.fm-group>div{display: table-cell;vertical-align: middle;}
+        .form .fm-label{min-width:150px;text-align: right;}
+        .form .fm-value{width:100%;}
+    </style>
+</head>
+<body>
+
+<div codeCk>
+    <div class="form">
+        <div class="fm-group h50">
+            <div class="fm-label">Label:</div>
+            <div class="fm-value">
+                <input type="text" class="textInput" value="Value"/>
+            </div>
+        </div>
+        <div class="fm-group h50">
+            <div class="fm-label">Label:</div>
+            <div class="fm-value">
+                <input type="text" class="textInput" value="Value"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

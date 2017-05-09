@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/core.css" merge="Main">
+</head>
+<body>
+<h3>Bootstrap Grid</h3>
+<div codeCk>
+    <div class="container-fluid" BsGrid>
+        <div class="row">
+            <div class="col-md-6">
+                col-md-6
+            </div>
+            <div class="col-md-6">
+                col-md-6
+            </div>
+        </div>
+    </div>
+</div>
+<div argumentCk>
+    <h3>Default Arguments</h3>
+    <label>
+        columns:
+        <select id="columns">
+            <option value="1">|12|</option>
+            <option value="2" selected>|6|6|</option>
+            <option value="3">|8|4|</option>
+            <option value="4">|4|4|4|</option>
+            <option value="5">|3|3|3|3|</option>
+            <option value="6">|2|6|4|</option>
+        </select>
+    </label>
+    <div id="test">test</div>
+</div>
+<script src="js/jquery-1.11.3.min.js"></script>
+<script>
+    $(function(){
+        document.getElementById("test").innerHTML = "动态文字";
+        $("#columns").change(function(){
+            $(".row").empty();
+            switch ($(this).val()){
+                case "1":
+                    $(".row").append('<div class="col-md-12">\ncol-md-12\n</div>');
+                    break;
+                case "2":
+                    $(".row").append('<div class="col-md-6">\ncol-md-6\n</div><div class="col-md-6">\ncol-md-6\n</div>');
+                    break;
+                case "3":
+                    $(".row").append('<div class="col-md-8">\ncol-md-8\n</div><div class="col-md-4">\ncol-md-4\n</div>');
+                    break;
+                case "4":
+                    $(".row").append('<div class="col-md-4">\ncol-md-4\n</div><div class="col-md-4">\ncol-md-4\n</div><div class="col-md-4">\ncol-md-4\n</div>');
+                    break;
+                case "5":
+                    $(".row").append('<div class="col-md-3">\ncol-md-3\n</div><div class="col-md-3">\ncol-md-3\n</div><div class="col-md-3">\ncol-md-3\n</div><div class="col-md-3">\ncol-md-3\n</div>');
+                    break;
+                case "6":
+                    $(".row").append('<div class="col-md-2">\ncol-md-2\n</div><div class="col-md-6">\ncol-md-6\n</div><div class="col-md-4">\ncol-md-4\n</div>');
+                    break;
+            }
+        })
+    })
+</script>
+</body>
+</html>

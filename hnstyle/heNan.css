@@ -1,0 +1,494 @@
+/** justifies **/
+.justifies {
+  width: 100%;
+  display: table;
+}
+.justifies > div {
+  display: table-cell;
+  position: relative;
+  height: 100%;
+  vertical-align: middle;
+}
+.justifies > div > span,
+.justifies > div > div {
+  position: relative;
+}
+.justifies .justifies {
+  padding: 0;
+}
+.justifies > .jf-fixed {
+  width: 150px;
+  min-width: 150px;
+}
+.justifies .jf-bg {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+.justifies > div.top,
+.justifies.tops > div {
+  vertical-align: top;
+}
+.justifies > div.middle,
+.justifies.middles > div {
+  vertical-align: middle;
+}
+.justifies > div.bottom,
+.justifies.bottoms > div {
+  vertical-align: bottom;
+}
+/** inline-block **/
+.ibs > *,
+.ib {
+  display: inline-block;
+  vertical-align: middle;
+}
+.ibs > .ib-height {
+  height: 40px;
+  width: 1px;
+  margin-left: -1px;
+}
+/** justify values **/
+.h1 {
+  width: 1%;
+}
+.h2 {
+  width: 2%;
+}
+.h3 {
+  width: 3%;
+}
+.h4 {
+  width: 4%;
+}
+.h5 {
+  width: 5%;
+}
+.h6 {
+  width: 6%;
+}
+.h7 {
+  width: 7%;
+}
+.h8 {
+  width: 8%;
+}
+.h9 {
+  width: 9%;
+}
+.h10 {
+  width: 10%;
+}
+.h11 {
+  width: 11%;
+}
+.h12 {
+  width: 12%;
+}
+.h13 {
+  width: 13%;
+}
+.h14 {
+  width: 14%;
+}
+.h15 {
+  width: 15%;
+}
+.h16 {
+  width: 16%;
+}
+.h17 {
+  width: 17%;
+}
+.h18 {
+  width: 18%;
+}
+.h9 {
+  width: 19%;
+}
+.h20 {
+  width: 20%;
+}
+.h21 {
+  width: 21%;
+}
+.h22 {
+  width: 22%;
+}
+.h23 {
+  width: 23%;
+}
+.h24 {
+  width: 24%;
+}
+.h25 {
+  width: 25%;
+}
+.h26 {
+  width: 26%;
+}
+.h27 {
+  width: 27%;
+}
+.h28 {
+  width: 28%;
+}
+.h29 {
+  width: 29%;
+}
+.h30 {
+  width: 30%;
+}
+.h31 {
+  width: 31%;
+}
+.h32 {
+  width: 32%;
+}
+.h33 {
+  width: 33%;
+}
+.h34 {
+  width: 34%;
+}
+.h35 {
+  width: 35%;
+}
+.h36 {
+  width: 36%;
+}
+.h37 {
+  width: 37%;
+}
+.h38 {
+  width: 38%;
+}
+.h39 {
+  width: 39%;
+}
+.h40 {
+  width: 40%;
+}
+.h41 {
+  width: 41%;
+}
+.h42 {
+  width: 42%;
+}
+.h43 {
+  width: 43%;
+}
+.h44 {
+  width: 44%;
+}
+.h45 {
+  width: 45%;
+}
+.h46 {
+  width: 46%;
+}
+.h47 {
+  width: 47%;
+}
+.h48 {
+  width: 48%;
+}
+.h49 {
+  width: 49%;
+}
+.h50 {
+  width: 50%;
+}
+.h51 {
+  width: 51%;
+}
+.h52 {
+  width: 52%;
+}
+.h53 {
+  width: 53%;
+}
+.h54 {
+  width: 54%;
+}
+.h55 {
+  width: 55%;
+}
+.h56 {
+  width: 56%;
+}
+.h57 {
+  width: 57%;
+}
+.h58 {
+  width: 58%;
+}
+.h59 {
+  width: 59%;
+}
+.h60 {
+  width: 60%;
+}
+.h61 {
+  width: 61%;
+}
+.h62 {
+  width: 62%;
+}
+.h63 {
+  width: 63%;
+}
+.h64 {
+  width: 64%;
+}
+.h65 {
+  width: 65%;
+}
+.h66 {
+  width: 66%;
+}
+.h67 {
+  width: 67%;
+}
+.h68 {
+  width: 68%;
+}
+.h69 {
+  width: 69%;
+}
+.h70 {
+  width: 70%;
+}
+.h71 {
+  width: 71%;
+}
+.h72 {
+  width: 72%;
+}
+.h73 {
+  width: 73%;
+}
+.h74 {
+  width: 74%;
+}
+.h75 {
+  width: 75%;
+}
+.h76 {
+  width: 76%;
+}
+.h77 {
+  width: 77%;
+}
+.h78 {
+  width: 78%;
+}
+.h79 {
+  width: 79%;
+}
+.h80 {
+  width: 80%;
+}
+.h81 {
+  width: 81%;
+}
+.h82 {
+  width: 82%;
+}
+.h83 {
+  width: 83%;
+}
+.h84 {
+  width: 84%;
+}
+.h85 {
+  width: 85%;
+}
+.h86 {
+  width: 86%;
+}
+.h87 {
+  width: 87%;
+}
+.h88 {
+  width: 88%;
+}
+.h89 {
+  width: 89%;
+}
+.h90 {
+  width: 90%;
+}
+.h91 {
+  width: 91%;
+}
+.h92 {
+  width: 92%;
+}
+.h93 {
+  width: 93%;
+}
+.h94 {
+  width: 94%;
+}
+.h95 {
+  width: 95%;
+}
+.h96 {
+  width: 96%;
+}
+.h97 {
+  width: 97%;
+}
+.h98 {
+  width: 98%;
+}
+.h99 {
+  width: 99%;
+}
+.h100 {
+  width: 100%;
+}
+.v100 {
+  height: 100%;
+}
+/** margin **/
+.mls {
+  margin-left: -4px;
+  margin-right: -4px;
+}
+.mls > div {
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.justifies.mls {
+  margin-left: 0;
+  margin-right: 0;
+}
+.justifies.mls > div:first-child {
+  padding-left: 0;
+}
+.justifies.mls > div {
+  margin-left: 0;
+  padding-left: 3px;
+  padding-right: 2px;
+}
+.justifies.mls > div > .jf-bg {
+  left: 3px;
+  right: 2px;
+}
+.justifies.mls > div:first-child > .jf-bg {
+  left: 0;
+}
+.justifies.mls > div:last-child > .jf-bg {
+  right: 0;
+}
+.justifies.mls > div:last-child {
+  padding-right: 0;
+}
+.mts {
+  margin-top: -10px;
+}
+.mts:first-child {
+  margin-top: 0;
+}
+.mts > * {
+  margin-top: 10px;
+}
+.mt {
+  margin-top: 10px;
+}
+.mtLg {
+  margin-top: 20px;
+}
+.mtSm {
+  margin-top: 5px;
+}
+.mtSuLg {
+  margin-top: 30px;
+}
+.ml {
+  margin-left: 10px;
+}
+.mlLg {
+  margin-left: 20px;
+}
+.mlSm {
+  margin-left: 5px;
+}
+.mlSuLg {
+  margin-left: 30px;
+}
+.pd {
+  padding: 10px;
+}
+.pdLg {
+  padding: 20px;
+}
+.pdSuLg {
+  padding: 30px;
+}
+.pdSm {
+  padding: 5px;
+}
+/** alignment **/
+.centers > *,
+.center {
+  text-align: center;
+}
+.centers > * > * {
+  text-align: left;
+}
+.centersDiv > *,
+.centerDiv {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.middles > *,
+.middle {
+  vertical-align: middle;
+}
+.bottoms > *,
+.bottom {
+  vertical-align: bottom;
+}
+div[codeCk] {
+  /*background:#f8ddd5;*/
+  box-sizing: border-box;
+}
+.documentCk a {
+  display: inline-block;
+  margin-left: 10px;
+}
+/** fix bootstrap **/
+input[type=checkbox].form-control {
+  padding: 0;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  margin-top: 0;
+}
+.formGrid {
+  width: 100%;
+}
+.formGrid .fg-label {
+  min-width: 80px;
+  max-width: 80px;
+  width: 80px;
+  text-align: right;
+  padding: 5px;
+}
+.formGrid td .input_text {
+  width: 100%;
+}
+.easyui-resizable {
+  background: #fff;
+}
+.conditions .panel-title {
+  color: grey;
+}

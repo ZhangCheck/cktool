@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Button</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css" merge="No"/>
+    <link rel="stylesheet" href="css/buttons.css" eraseble="true"/>
+
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Button.js" eraseble="true"></script>
+    <script src="js/ButtonDemo.js" eraseble="true" merge="project"></script>
+
+</head>
+
+<body>
+
+<h3>Button</h3>
+
+<div codeCk>
+    <div ng-controller="ButtonsCtrl">
+        <button type="button" class="btn btn-default" ng-click="onClickBt()"  ng-model="singleModel">
+            Single Toggle
+        </button>
+    </div>
+</div>
+
+<h3>Document</h3>
+<ul>
+    <li>btn-checkbox: make btn can be selected</li>
+    <li>btn-checkbox-true: the value when checkbox selected</li>
+    <li>btn-checkbox-false: the value when checkbox not selected</li>
+</ul>
+</body>
+</html>

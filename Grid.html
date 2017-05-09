@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Grid</title>
+    <link rel="stylesheet" href="css/ui-grid.css"/>
+
+    <meta file src="model/100.json"/>
+
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/angular-touch.js" merge="No"></script>
+    <script src="js/angular-animate.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Grid.js" eraseble="true"></script>
+    <script src="js/GridDemo.js" merge="project" eraseble="true"></script>
+
+</head>
+<body>
+    <h3>Grid</h3>
+    <div codeCk>
+        <div ng-controller="MainCtrl">
+            <strong>Drag</strong> a the column separator to resize; <strong>double-click</strong> to size according to rendered column contents.
+            <br>
+            <br>
+            The column will obey any <i>minWidth</i> or <i>maxWidth</i> constraints you give it.
+            <br>
+            <br>
+            <div ui-grid="gridOptions" class="grid" ui-grid-resize-columns ui-grid-move-columns></div>
+        </div>
+    </div>
+    <h3>Document</h3>
+    <a href="http://ui-grid.info/docs/#/tutorial/102_sorting">Tutorial</a>
+    <a href="http://ui-grid.info/docs/#/api">API</a>
+</body>
+</html>

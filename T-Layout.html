@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>T-Layout</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/ckcss.css" merge="Main"/>
+    <link rel="stylesheet" href="css/dropdowns.css"/>
+    <link rel="stylesheet" href="css/Menu.css" eraseble="true"/>
+    <link rel="stylesheet" href="css/glyphicons.css"/>
+    <link rel="stylesheet" href="css/T-Layout.css" eraseble="true"/>
+
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/bootstrap/dropdown.js" eraseble="true"></script>
+    <script src="js/Menu.js" eraseble="true"></script>
+
+    <meta hack type="script" before="<!--[if lt IE 9]>" after="<![endif]-->" src="js/html5.js" merge="No"/>
+    <!--[if lt IE 9]>
+    <script src="js/html5.js" merge="No" hack="[if lt IE 9]"></script>
+    <![endif]-->
+</head>
+
+<body codeCk>
+        <header>
+            <section class="tLayoutCon justifies middles v100">
+                <div class="jf-fixed"><img class="logo" src="http://www.flashpretty.com/check/images/logo.png"/></div>
+
+                <div class="menuCon">
+                    <div class="menu">
+                        <button class="btn btn-default dropdown-toggle pull-right" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            <i class="glyphicon glyphicon-align-justify"></i>
+                        </button>
+                        <!--dropdown-menu dropdown-menu-right-->
+                        <ul class="m-items m-row" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+        </header>
+        <section class="main">
+            <section class="m-face">
+                <div class="tf-img visible-md visible-lg"></div>
+                <img class="tf-imgM hidden-md hidden-lg img-responsive" src="http://www.flashpretty.com/check/images/headerBg.jpg"/>
+            </section>
+            <section class="tLayoutCon">
+                T-Layout is traditional web layout, it has below features:
+                <ul>
+                    <li>Html5 tags, support IE8;</li>
+                    <li>Header big picture long enough、no scale、and align center;</li>
+                    <li>Header big picture scaled to show all in mobile device;</li>
+                    <li>Content can have fixed width, and align center; </li>
+                    <li>Footer align to bottom,when content height less than screen height,otherwise footer followed to page content;</li>
+                </ul>
+            </section>
+            <section class="tLayoutCon">
+                other content
+            </section>
+            <footer>
+                <div class="tLayoutCon ibs center"><span class="ib-height"></span><span>Created By CheckZhang, Copyright to CKTool [2015]</span></div>
+            </footer>
+        </section>
+</body>
+
+</html>

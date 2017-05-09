@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Popover</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/popovers.css" eraseble="true"/>
+
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/bootstrap/tooltip.js"></script>
+    <script src="js/bootstrap/popover.js" eraseble="true"></script>
+    <script>
+        $(function(){
+            $('.popoverInst').popover({})
+        })
+    </script>
+</head>
+<body>
+<h3>Popover</h3>
+
+<div codeCk>
+    <a tabindex="0" class="btn btn-lg btn-danger popoverInst" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">Dismissible popover</a>
+</div>
+<h3>Document</h3>
+<a href="http://v3.bootcss.com/javascript/#popovers">API</a>
+</body>
+</html>

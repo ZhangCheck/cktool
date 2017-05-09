@@ -1,0 +1,7 @@
+<project>
+    <mainCss src="Main.css"></mainCss>
+    <pageCss>
+        <!--By default the CSS file name same to it's page name, but you can custom it like below-->
+        <!--<page name="t.html" src="pageCss.css"></page>-->
+    </pageCss>
+</project>

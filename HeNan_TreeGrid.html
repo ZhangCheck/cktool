@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="hnstyle/css/reset.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/css/base.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/css/layout.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/heNan.css" merge="No"/><meta folder src="hnstyle/images">      <link rel="stylesheet" type="text/css" href="Easyui/themes/easyui.css" merge="No">     <link rel="stylesheet" type="text/css" href="Easyui/themes/icon.css" merge="No">     <script src="Easyui/jquery.min.js" merge="No"></script>     <script src="Easyui/jquery.easyui.min.js" merge="No"></script>     <script src="Easyui/locale/easyui-lang-zh_CN.js" merge="No"></script>      <meta folder src="hnstyle/images">     <meta folder src="Easyui/themes/images">
+</head>
+<body>
+<div codeCk>
+    <table title="Folder Browser" class="easyui-treegrid" style="width:700px;height:250px"
+           data-options="
+				url: 'model/treegrid_data1.json',
+				method: 'get',
+				rownumbers: true,
+				idField: 'id',
+				treeField: 'name'
+			">
+        <thead>
+        <tr>
+            <th data-options="field:'name'" width="220">Name</th>
+            <th data-options="field:'size'" width="100" align="right">Size</th>
+            <th data-options="field:'date'" width="150">Modified Date</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>

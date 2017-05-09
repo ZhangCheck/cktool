@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>DatePicker</title>
+
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/input-groups.css"/>
+    <link rel="stylesheet" href="css/glyphicons.css"/>
+
+    <script src="js/angular.js"  merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Button.js"></script>
+    <script src="js/DatePicker.js" eraseble="true"></script>
+    <script src="js/DatePickerDemo.js" eraseble="true"  merge="project"></script>
+
+    <style>
+        .full button span {
+            background-color: limegreen;
+            border-radius: 32px;
+            color: black;
+        }
+        .partially button span {
+            background-color: orange;
+            border-radius: 32px;
+            color: black;
+        }
+    </style>
+
+</head>
+<body>
+<h3>DatePicker</h3>
+<div codeCk>
+    <div ng-controller="DatepickerDemoCtrl">
+        <pre>Selected date is: <em>{{dt | date:'fullDate' }}</em></pre>
+
+        <div style="display:inline-block; min-height:290px;">
+            <datepicker ng-model="dt" min-date="minDate" show-weeks="true" class="well well-sm" custom-class="getDayClass(date, mode)"></datepicker>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <label>Format:</label> <select class="form-control" ng-model="format" ng-options="f for f in formats"><option></option></select>
+            </div>
+        </div>
+
+        <hr />
+        <button type="button" class="btn btn-sm btn-info" ng-click="today()">Today</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="dt = '2009-08-24'">2009-08-24</button>
+        <button type="button" class="btn btn-sm btn-danger" ng-click="clear()">Clear</button>
+        <button type="button" class="btn btn-sm btn-default" ng-click="toggleMin()" tooltip="After today restriction">Min date</button>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Carousel</title>
+    <link rel="stylesheet" href="css/core.css" merge="No"/>
+    <link rel="stylesheet" href="css/component-animations.css" merge="No"/>
+    <link rel="stylesheet" href="css/carousel.css" eraseble="true"/>
+
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/angular-animate.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/mixins/Transition.js"></script>
+    <script src="js/Carousel.js" eraseble="true"></script>
+    <script src="js/CarouselDemo.js" eraseble="true"  merge="Project"></script>
+</head>
+<body>
+<h3>Carousel</h3>
+<div codeCk>
+    <div ng-controller="CarouselDemoCtrl">
+        <div style="height: 305px;width:500px;position:relative;">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;"/>
+                    <div class="carousel-caption">
+                        <h4>Slide {{$index}}</h4>
+                        <p>{{slide.text}}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-info" ng-click="addSlide()">Add Slide</button>
+            </div>
+            <div class="col-md-6">
+                Interval, in milliseconds: <input type="number" class="form-control" ng-model="myInterval"/>
+                <br />Enter a negative number or 0 to stop the interval.
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

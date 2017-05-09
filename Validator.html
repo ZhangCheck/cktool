@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Validator</title>
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script src="js/messages_zh.js" ></script>
+</head>
+
+<body>
+    <div codeCk>
+        <form id="form1">
+            <input name="userName"/>
+            <div class="submitBt">submitBt</div>
+        </form>
+
+        <script>
+            $("#form1").validate({
+                rules:{
+                    userName:{
+                        required:true
+                    }
+                }
+            });
+            $("#submitBt").on("click", function () {
+                if($("#form1").valid()){
+                    console.log("validate success!");
+                }
+            });
+        </script>
+    </div>
+    <div class="document">
+        Document:<a href="http://jqueryvalidation.org/validate">API</a>
+    </div>
+</body>
+</html>

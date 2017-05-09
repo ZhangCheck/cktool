@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/easyuiIcon.css">
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/jquery.easyui.min.js" merge="No"></script>
+    <script>
+        function doSearch(value){
+            alert('You input: ' + value);
+        }
+    </script>
+</head>
+<body><h2>Basic SearchBox</h2>
+<p>Click search button or press enter key in input box to do searching.</p>
+<div style="margin:20px 0;"></div>
+
+
+<div codeCk>
+    <input class="easyui-searchbox" data-options="prompt:'Please Input Value',searcher:doSearch" style="width:300px"></input>
+</div>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Angular</title>
+
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/ckcss.css" merge="Main"/>
+    <link rel="stylesheet" href="css/AngularDemo.css"/>
+
+    <meta file src="model/testMdl.txt"/>
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/angularDemo.js" merge="Project"></script>
+</head>
+<body>
+<h3>Angular Demo</h3>
+<div codeCk>
+    <div ng-controller="testCtl">
+        <a id="testA" class="testAA" href="" ng-click="clickTest()">Hello {{yourName}}!(click me)</a>
+    </div>
+</div>
+
+    <h3>Document</h3>
+<div class="documentCk">
+    <a href="https://angularjs.org/">OfficalSite</a>
+    <a href="https://docs.angularjs.org/api">API</a>
+    <a href="https://docs.angularjs.org/tutorial">Tutorial</a>
+    <a href="https://docs.angularjs.org/api/ng/function/angular.element">jqLite</a>
+    <a href="https://docs.angularjs.org/guide">Guide</a>
+</div>
+<div class="api-profile-description ng-scope">
+    <p>Wraps a raw DOM element or HTML string as a <a href="http://jquery.com">jQuery</a> element.</p>
+    <p>If jQuery is available, <code><span class="pln">angular</span><span class="pun">.</span><span class="pln">element</span></code> is an alias for the
+        <a href="http://api.jquery.com/jQuery/">jQuery</a> function. If jQuery is not available, <code><span class="pln">angular</span><span class="pun">.</span><span class="pln">element</span></code>
+        delegates to Angular's built-in subset of jQuery, called "jQuery lite" or "jqLite."</p>
+    <div class="alert alert-success">jqLite is a tiny, API-compatible subset of jQuery that allows
+        Angular to manipulate the DOM in a cross-browser compatible way. <strong>jqLite</strong> implements only the most
+        commonly needed functionality with the goal of having a very small footprint.</div>
+
+    <p>To use <code><span class="pln">jQuery</span></code>, simply ensure it is loaded before the <code><span class="pln">angular</span><span class="pun">.</span><span class="pln">js</span></code> file.</p>
+    <div class="alert"><strong>Note:</strong> all element references in Angular are always wrapped with jQuery or
+        jqLite; they are never raw DOM references.</div>
+
+    <h2 id="angular-s-jqlite">Angular's jqLite</h2>
+    <p>jqLite provides only the following jQuery methods:</p>
+    <ul>
+        <li><a href="http://api.jquery.com/addClass/"><code><span class="pln">addClass</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/after/"><code><span class="pln">after</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/append/"><code><span class="pln">append</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/attr/"><code><span class="pln">attr</span><span class="pun">()</span></code></a> - Does not support functions as parameters</li>
+        <li><a href="http://api.jquery.com/bind/"><code><span class="pln">bind</span><span class="pun">()</span></code></a> - Does not support namespaces, selectors or eventData</li>
+        <li><a href="http://api.jquery.com/children/"><code><span class="pln">children</span><span class="pun">()</span></code></a> - Does not support selectors</li>
+        <li><a href="http://api.jquery.com/clone/"><code><span class="pln">clone</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/contents/"><code><span class="pln">contents</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/css/"><code><span class="pln">css</span><span class="pun">()</span></code></a> - Only retrieves inline-styles, does not call <code><span class="pln">getComputedStyle</span><span class="pun">()</span></code>. As a setter, does not convert numbers to strings or append 'px'.</li>
+        <li><a href="http://api.jquery.com/data/"><code><span class="pln">data</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/detach/"><code><span class="pln">detach</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/empty/"><code><span class="pln">empty</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/eq/"><code><span class="pln">eq</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/find/"><code><span class="pln">find</span><span class="pun">()</span></code></a> - Limited to lookups by tag name</li>
+        <li><a href="http://api.jquery.com/hasClass/"><code><span class="pln">hasClass</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/html/"><code><span class="pln">html</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/next/"><code><span class="kwd">next</span><span class="pun">()</span></code></a> - Does not support selectors</li>
+        <li><a href="http://api.jquery.com/on/"><code><span class="pln">on</span><span class="pun">()</span></code></a> - Does not support namespaces, selectors or eventData</li>
+        <li><a href="http://api.jquery.com/off/"><code><span class="pln">off</span><span class="pun">()</span></code></a> - Does not support namespaces or selectors</li>
+        <li><a href="http://api.jquery.com/one/"><code><span class="pln">one</span><span class="pun">()</span></code></a> - Does not support namespaces or selectors</li>
+        <li><a href="http://api.jquery.com/parent/"><code><span class="pln">parent</span><span class="pun">()</span></code></a> - Does not support selectors</li>
+        <li><a href="http://api.jquery.com/prepend/"><code><span class="pln">prepend</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/prop/"><code><span class="pln">prop</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/ready/"><code><span class="pln">ready</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/remove/"><code><span class="pln">remove</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/removeAttr/"><code><span class="pln">removeAttr</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/removeClass/"><code><span class="pln">removeClass</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/removeData/"><code><span class="pln">removeData</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/replaceWith/"><code><span class="pln">replaceWith</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/text/"><code><span class="pln">text</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/toggleClass/"><code><span class="pln">toggleClass</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/triggerHandler/"><code><span class="pln">triggerHandler</span><span class="pun">()</span></code></a> - Passes a dummy event object to handlers.</li>
+        <li><a href="http://api.jquery.com/unbind/"><code><span class="pln">unbind</span><span class="pun">()</span></code></a> - Does not support namespaces</li>
+        <li><a href="http://api.jquery.com/val/"><code><span class="pln">val</span><span class="pun">()</span></code></a></li>
+        <li><a href="http://api.jquery.com/wrap/"><code><span class="pln">wrap</span><span class="pun">()</span></code></a></li>
+    </ul>
+    <h2 id="jquery-jqlite-extras">jQuery/jqLite Extras</h2>
+    <p>Angular also provides the following additional methods and events to both jQuery and jqLite:</p>
+    <h3 id="events">Events</h3>
+    <ul>
+        <li><code><span class="pln">$destroy</span></code> - AngularJS intercepts all jqLite/jQuery's DOM destruction apis and fires this event
+            on all DOM nodes being removed.  This can be used to clean up any 3rd party bindings to the DOM
+            element before it is removed.</li>
+    </ul>
+    <h3 id="methods">Methods</h3>
+    <ul>
+        <li><code><span class="pln">controller</span><span class="pun">(</span><span class="pln">name</span><span class="pun">)</span></code> - retrieves the controller of the current element or its parent. By default
+            retrieves controller associated with the <code><span class="pln">ngController</span></code> directive. If <code><span class="pln">name</span></code> is provided as
+            camelCase directive name, then the controller for this directive will be retrieved (e.g.
+            <code><span class="str">'ngModel'</span></code>).</li>
+        <li><code><span class="pln">injector</span><span class="pun">()</span></code> - retrieves the injector of the current element or its parent.</li>
+        <li><code><span class="pln">scope</span><span class="pun">()</span></code> - retrieves the <a href="api/ng/type/$rootScope.Scope">scope</a> of the current
+            element or its parent. Requires <a href="guide/production#disabling-debug-data">Debug Data</a> to
+            be enabled.</li>
+        <li><code><span class="pln">isolateScope</span><span class="pun">()</span></code> - retrieves an isolate <a href="api/ng/type/$rootScope.Scope">scope</a> if one is attached directly to the
+            current element. This getter should be used only on elements that contain a directive which starts a new isolate
+            scope. Calling <code><span class="pln">scope</span><span class="pun">()</span></code> on this element always returns the original non-isolate scope.
+            Requires <a href="guide/production#disabling-debug-data">Debug Data</a> to be enabled.</li>
+        <li><code><span class="pln">inheritedData</span><span class="pun">()</span></code> - same as <code><span class="pln">data</span><span class="pun">()</span></code>, but walks up the DOM until a value is found or the top
+            parent element is reached.</li>
+    </ul>
+
+</div>
+
+</body>
+</html>

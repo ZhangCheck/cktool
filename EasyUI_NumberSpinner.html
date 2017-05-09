@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/easyuiIcon.css">
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/jquery.easyui.min.js" merge="No"></script>
+</head>
+<body>
+<div codeCk>
+    <input class="easyui-numberspinner" style="width:80px;" data-options="
+				onChange: function(value){
+					$('#vv').text(value);
+				}
+			"></input>
+    <div style="margin:10px 0;">
+        Value: <span id="vv"></span>
+    </div>
+</div>
+</body>
+</html>

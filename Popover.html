@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Popover</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/forms.css"/>
+    <link rel="stylesheet" href="css/tooltip.css"/>
+    <link rel="stylesheet" href="css/popovers.css" eraseble="true"/>
+
+    <script src="js/angular.js"  merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Button.js"></script>
+    <script src="js/mixins/Position.js"></script>
+    <script src="js/mixins/BindHtml.js"></script>
+    <script src="js/Tooltip.js"></script>
+    <script src="js/Popover.js" eraseble="true"></script>
+    <script src="js/PopoverDemo.js" eraseble="true" merge="project"></script>
+</head>
+<body>
+<h3>Popover</h3>
+<div codeCk>
+    <div ng-controller="PopoverDemoCtrl">
+        <h4>Dynamic</h4>
+        <div class="form-group">
+            <label>Popup Text:</label>
+            <input type="text" ng-model="dynamicPopover.content" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Popup Title:</label>
+            <input type="text" ng-model="dynamicPopover.title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label>Popup Template:</label>
+            <input type="text" ng-model="dynamicPopover.templateUrl" class="form-control">
+        </div>
+        <button popover="{{dynamicPopover.content}}" popover-title="{{dynamicPopover.title}}" class="btn btn-default">Dynamic Popover</button>
+
+        <button popover-template="dynamicPopover.templateUrl" popover-title="{{dynamicPopover.title}}" class="btn btn-default">Popover With Template</button>
+
+        <script type="text/ng-template" id="myPopoverTemplate.html">
+            <div>{{dynamicPopover.content}}</div>
+            <div class="form-group">
+                <label>Popup Title:</label>
+                <input type="text" ng-model="dynamicPopover.title" class="form-control">
+            </div>
+        </script>
+
+        <hr />
+        <h4>Positional</h4>
+        <button popover-placement="top" popover="On the Top!" class="btn btn-default">Top</button>
+        <button popover-placement="left" popover="On the Left!" class="btn btn-default">Left</button>
+        <button popover-placement="right" popover="On the Right!" class="btn btn-default">Right</button>
+        <button popover-placement="bottom" popover="On the Bottom!" class="btn btn-default">Bottom</button>
+
+        <hr />
+        <h4>Triggers</h4>
+        <p>
+            <button popover="I appeared on mouse enter!" popover-trigger="mouseenter" class="btn btn-default">Mouseenter</button>
+        </p>
+        <input type="text" value="Click me!" popover="I appeared on focus! Click away and I'll vanish..."  popover-trigger="focus" class="form-control">
+
+        <hr />
+        <h4>Other</h4>
+        <button Popover-animation="true" popover="I fade in and out!" class="btn btn-default">fading</button>
+        <button popover="I have a title!" popover-title="The title." class="btn btn-default">title</button>
+    </div>
+</div>
+</body>
+</html>

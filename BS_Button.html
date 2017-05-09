@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Button</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/bootstrap/button.js"></script>
+</head>
+<body>
+    <div codeCk class="mt">
+        <button type="button" class="btn btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+            Single toggle
+        </button>
+    </div>
+
+<div argumentCk>
+    <h3>参数设置</h3>
+
+    <div id="buttonStyle" class="mts">
+        <div class="ib">样式：</div>
+        <!-- Standard button -->
+        <button type="button" class="btn btn-default">（默认样式）Default</button>
+
+        <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+        <button type="button" class="btn btn-primary">（首选项）Primary</button>
+
+        <!-- Indicates a successful or positive action -->
+        <button type="button" class="btn btn-success">（成功）Success</button>
+
+        <!-- Contextual button for informational alert messages -->
+        <button type="button" class="btn btn-info">（一般信息）Info</button>
+
+        <!-- Indicates caution should be taken with this action -->
+        <button type="button" class="btn btn-warning">（警告）Warning</button>
+
+        <!-- Indicates a dangerous or potentially negative action -->
+        <button type="button" class="btn btn-danger">（危险）Danger</button>
+
+        <!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+        <button type="button" class="btn btn-link">（链接）Link</button>
+    </div>
+
+    <div id="buttonSize" class="mts mt">
+        <div class="ib">尺寸：</div>
+        <button type="button" class="btn btn-primary btn-lg">（大按钮）Large button</button>
+        <button type="button" class="btn btn-primary">（默认尺寸）Default button</button>
+        <button type="button" class="btn btn-primary btn-sm">（小按钮）Small button</button>
+        <button type="button" class="btn btn-primary btn-xs">（超小尺寸）Extra small button</button>
+    </div>
+
+    <div id="buttonActive" class="mt">
+        <div class="ib">激活状态：</div>
+        <button type="button" class="btn btn-primary active">激活切换</button>
+
+    </div>
+    <div id="buttonDisabled" class="mt">
+        <div class="ib">禁用状态：</div>
+        <button type="button" class="btn btn-primary" >禁用</button>
+    </div>
+</div>
+
+    
+<!--<script src="js/argumentsCk.js"></script>-->
+<script>
+    $('#buttonStyle button').click(function(){
+        var class0 =  $('*[codeCk]').find('button').attr('class');
+        var class1 = class0.replace("btn-default","").replace("btn-primary","").replace("btn-success","").replace("btn-info","").replace("btn-warning","").replace("btn-danger","").replace("btn-link","")+" "+$(this).attr("class").replace("btn ","");
+        $('*[codeCk] button').attr('class',class1);
+    })
+
+    $('#buttonSize button').click(function(){
+        var class0 =  $('*[codeCk]').find('button').attr('class');
+        var class1 = class0.replace("btn-lg","").replace("btn-sm","").replace("btn-xs","")+" "+$(this).attr('class').replace("btn btn-primary","");
+        $('*[codeCk] button').attr('class',class1);
+    })
+
+    $('#buttonActive button').click(function(){
+        $('*[codeCk]').find('button').toggleClass('active');
+    })
+
+    $('#buttonDisabled button').click(function(){
+        var bt = $('*[codeCk]').find('button');
+        if(bt.attr('disabled')!="disabled"){
+            bt.attr('disabled',"disabled");
+        }else{
+            bt.removeAttr('disabled');
+        }
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="hnstyle/css/reset.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/css/base.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/css/layout.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/heNan.css" merge="No"/><meta folder src="hnstyle/images">      <link rel="stylesheet" type="text/css" href="Easyui/themes/easyui.css" merge="No">     <link rel="stylesheet" type="text/css" href="Easyui/themes/icon.css" merge="No">     <script src="Easyui/jquery.min.js" merge="No"></script>     <script src="Easyui/jquery.easyui.min.js" merge="No"></script>     <script src="Easyui/locale/easyui-lang-zh_CN.js" merge="No"></script>      <meta folder src="hnstyle/images">     <meta folder src="Easyui/themes/images">
+    <script>
+        function doSearch(value){
+            alert('You input: ' + value);
+        }
+    </script>
+</head>
+<body><h2>Basic SearchBox</h2>
+<p>Click search button or press enter key in input box to do searching.</p>
+<div style="margin:20px 0;"></div>
+
+
+<div codeCk>
+    <input class="easyui-searchbox" data-options="prompt:'Please Input Value',searcher:doSearch" style="width:300px"></input>
+</div>
+</body>
+</html>

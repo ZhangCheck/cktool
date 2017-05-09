@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Collapse</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Button.js"></script>
+    <script src="js/Collapse.js"></script>
+    <script src="js/CollapseDemo.js" eraseble="true" merge="project"></script>
+</head>
+<body>
+<h3>Collapse</h3>
+<div codeCk>
+    <div ng-controller="CollapseDemoCtrl">
+        <button class="btn btn-default" ng-click="isCollapsed = !isCollapsed">Toggle collapse</button>
+        <hr/>
+        <div collapse="isCollapsed">
+            <div class="well well-lg">Some content</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

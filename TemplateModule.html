@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Template Guide</title>
+    <link rel="stylesheet" href="css/Core.css"/>
+    <link rel="stylesheet" href="css/ckcss.css"/>
+    <style>
+
+        section{
+            padding:10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Template Definition</h2>
+    <section>
+        <h3>CKTool Project Structure</h3>
+        <section>
+            <h4>CKTool contains below file and folder:</h4>
+            <p>"template" Folder: contains all template, created by CKTool,and full in CKTool global default templates,eg Button,DropDown...</p>
+            <p>"css" Folder: created when use some template, contains all style file</p>
+            <p>"css/main.css" File: created by CKTool when use some template,it's global css file,used by most pages in project;</p>
+            <p>"css/{pageName}.css" File: created by CKTool when use some template,it's single page's style file,only used to single page;</p>
+            <p>"js" Folder: created when use some template, contains all script file</p>
+            <p>"js/main.js" File: created by CKTool when use some template,it's global script file,used by most pages in project;</p>
+            <p>"js/{pageName}.js" File: created by CKTool when use some template,it's single page's script file,only used to single page;</p>
+            <p>"images"Folder: contains all image file</p>
+            <p>"fonts" Folder: contains all font file</p>
+            <p>"model" Folder: contains Model Data in Single Page Project</p>
+            <p>"view" Folder: contains View Html in Single Page Project</p>
+            <p>"js" Folder:  contains Controller in Single Page Project</p>
+
+        </section>
+
+
+        <h3>How to merge template's js/css to Main js/css?</h3>
+        <section>
+            1,Select "merge" mode in CKTool Panel Window,select "Page" will merge template code to Page's js/css, select "Main" will merge to Global Main js/css file;〈br/>
+            2,Set attribute "fixMergeTo" in template's js/css dom: <br/>
+            <ul>
+                <li>"Main": merge to global css file "main.css"</li>
+                <li>"Page": merge to page css file</li>
+                <li>"no": don't merge this resource file</li>
+            </ul>
+            The second way is primary over first way;
+        </section>
+
+        <h3>How to Move template js/css file between Main and Page File</h3>
+        <section>
+            Only merge="No" resource can be moved;<br/>
+            <xmp><link href="css/test.css" merge="No"/></xmp>
+            In CKTool Panel, Select "write mode" to "Move", and select "merge" target to move to,then click want to moved template;
+        </section>
+
+
+        <h3>How to remove template resource from Main or Page?</h3>
+        <section>
+            Only eraseble="true" resource can be removed;<br/>
+            <xmp><link href="css/test.css" eraseble="true"/></xmp>
+            In CKTool Panel, Select "write mode" to "Erase", then click the template want to be removed;
+        </section>
+
+
+        <h3>How to copy template other resource file(except code file) to project?</h3>
+        <section>
+            The resource file used in template's css file will be copyed to project by ckTool dynamicaly;<br/>
+            The resource file not used in  template's css file can be copyed by below way:<br/>
+            add file: <meta file src="font/someFile.json"/>
+            add folder:<folder src="videoJs"></folder>
+        </section>
+
+
+    </section>
+
+
+</body>
+</html>

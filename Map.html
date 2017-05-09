@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Map</title>
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/MapImg.js"></script>
+</head>
+<body>
+<h3>Image Map Tool</h3>
+<div codeCk>
+    <img class="withMap" src="http://www.flashpretty.com/check/images/headerBg.jpg" usemap="#myMap"/>
+    <map name="myMap" id="myMap">
+        <area shape="poly" coords="0,0,100,0,100,50,0,50" alt="Test" href="#"/>
+    </map>
+</div>
+<label for="imgUrl">Image Url:</label>
+<input id="imgUrl" type="text" style="width:80%"/>
+<input id="setUrl" type="button" value="Set"/>
+<br/>
+<label for="mapData">Map Data:</label>
+<input id="mapData" type="text" style="width:80%;"/>
+<input id="clear" type="button" value="clear"/>
+<br/>
+<span>State Mode:</span>
+<input id="state" type="checkbox"/><label for="state">test</label>
+
+<pre id="source">
+
+</pre>
+
+<script>
+    $('.withMap').click(function(e){
+        if($("#state").get(0).checked) return;
+        var oldValue = $('#mapData').val();
+        $('#mapData').val(oldValue+(oldValue.length>0?",":"")+ e.offsetX+","+ e.offsetY);
+        $('#myMap').find('area').attr({coords:$('#mapData').val()}).data({coords:$('#mapData').val()});
+        $('#source').text($('div[codeCk]').get(0).innerHTML);
+    })
+    $('#setUrl').click(function(){
+        $('.withMap').attr("src",$('#imgUrl').val());
+    })
+    $('#clear').click(function(){
+        $('#mapData').val("");
+        $('#myMap').find('area').attr({coords:""});
+    })
+</script>
+
+<h3>Document</h3>
+<a href="http://www.w3school.com.cn/tags/tag_area.asp">API</a>
+</body>
+</html>

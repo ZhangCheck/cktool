@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>RadioButton</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css" merge="No"/>
+    <link rel="stylesheet" href="css/buttons.css" eraseble="true"/>
+
+    <script src="js/angular.js" merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Button.js" eraseble="true"></script>
+    <script src="js/RadioButtonDemo.js" eraseble="true" merge="project"></script>
+</head>
+<body>
+<h3>Radio Button</h3>
+<pre>{{radioModel || 'null'}}</pre>
+<div codeCk>
+    <div ng-controller="RadioButtonCtrl">
+        <div class="btn-group">
+            <label class="btn btn-success" ng-model="radioModel" btn-radio="'Left'" uncheckable>Left</label>
+            <label class="btn btn-success" ng-model="radioModel" btn-radio="'Middle'" uncheckable>Middle</label>
+            <label class="btn btn-success" ng-model="radioModel" btn-radio="'Right'" uncheckable>Right</label>
+        </div>
+    </div>
+
+</div>
+<h3>Document</h3>
+<ul>
+    <li>uncheckable: enable cancel select</li>
+</ul>
+</body>
+</html>

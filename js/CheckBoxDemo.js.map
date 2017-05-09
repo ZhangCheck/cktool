@@ -1,0 +1,1 @@
+{"version":3,"file":"CheckBoxDemo.js","sourceRoot":"","sources":["CheckBoxDemo.ts"],"names":[],"mappings":"AAAA,EAAE,CAAC,MAAM,EAAE,CAAC,UAAU,CAAC,cAAc,EAAE,UAAU,MAAM;IACnD,MAAM,CAAC,UAAU,GAAG;QAChB,IAAI,EAAE,KAAK;QACX,MAAM,EAAE,IAAI;QACZ,KAAK,EAAE,KAAK;KACf,CAAC;AACN,CAAC,CAAC,CAAC"}

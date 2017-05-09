@@ -1,0 +1,5 @@
+@font-face {
+  font-family: 'fontNameRegular';
+  src: url('../fonts/myFont.eot');
+  src: local('myFont Regular'), local('myFont'), url('../myFont.woff') format('woff'), url('../myFont.ttf') format('truetype'), url('../myFont.svg#fontName') format('svg');
+}

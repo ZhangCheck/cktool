@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="hnstyle/css/reset.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/css/base.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/css/layout.css" merge="No"/>     <link rel="stylesheet" href="hnstyle/heNan.css" merge="No"/><meta folder src="hnstyle/images">      <link rel="stylesheet" type="text/css" href="Easyui/themes/easyui.css" merge="No">     <link rel="stylesheet" type="text/css" href="Easyui/themes/icon.css" merge="No">     <script src="Easyui/jquery.min.js" merge="No"></script>     <script src="Easyui/jquery.easyui.min.js" merge="No"></script>     <script src="Easyui/locale/easyui-lang-zh_CN.js" merge="No"></script>      <meta folder src="hnstyle/images">     <meta folder src="Easyui/themes/images">
+
+    <script type="text/javascript">
+        function showGroup(){
+            $('#pg').propertygrid({
+                showGroup:true
+            });
+        }
+        function hideGroup(){
+            $('#pg').propertygrid({
+                showGroup:false
+            });
+        }
+        function showHeader(){
+            $('#pg').propertygrid({
+                showHeader:true
+            });
+        }
+        function hideHeader(){
+            $('#pg').propertygrid({
+                showHeader:false
+            });
+        }
+        function getChanges(){
+            var s = '';
+            var rows = $('#pg').propertygrid('getChanges');
+            for(var i=0; i<rows.length; i++){
+                s += rows[i].name + ':' + rows[i].value + ',';
+            }
+            alert(s)
+        }
+    </script>
+</head>
+<body>
+<div codeCk>
+    <div style="margin:20px 0;">
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="showGroup()">ShowGroup</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="hideGroup()">HideGroup</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="showHeader()">ShowHeader</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="hideHeader()">HideHeader</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" onclick="getChanges()">GetChanges</a>
+    </div>
+    <table id="pg" class="easyui-propertygrid" style="width:300px" data-options="
+				url:'model/propertygrid_data1.json',
+				method:'get',
+				showGroup:true,
+				scrollbarSize:0
+			">
+    </table>
+
+
+</div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="hnstyle/css/reset.css" merge="No">
+    <link rel="stylesheet" href="hnstyle/css/base.css" merge="No">
+    <link rel="stylesheet" href="hnstyle/css/layout.css" merge="No">
+    <link rel="stylesheet" href="hnstyle/heNan.css" merge="No">
+    <link rel="stylesheet" type="text/css" href="Easyui/themes/easyui.css" merge="No">
+    <link rel="stylesheet" type="text/css" href="Easyui/themes/icon.css" merge="No">
+    <script src="Easyui/jquery.min.js" merge="No"></script>
+    <script src="Easyui/jquery.easyui.min.js" merge="No"></script>
+    <script src="Easyui/locale/easyui-lang-zh_CN.js" merge="No"></script>
+    <meta folder src="hnstyle/images">
+    <meta folder src="Easyui/themes/images">
+    <meta file src="model/datagrid_data1.json">
+
+    <script src="js/HeNan/HeNan_LeftRight.js"></script>
+
+</head>
+<body>
+
+<div codeCk class="">
+    <table cellpadding="0" class="leftRight" cellspacing="0" border="0">
+        <tr>
+            <td class="leftSide">
+                <table class="easyui-datagrid" title="CheckBox Selection on DataGrid" style="width:700px;height:250px"
+                       data-options="rownumbers:true,singleSelect:false,url:'model/datagrid_data1.json',method:'get'">
+                    <thead>
+                    <tr>
+                        <th data-options="field:'ck',checkbox:true"></th>
+                        <th data-options="field:'itemid',width:80">Item ID</th>
+                        <th data-options="field:'productid',width:100">Product</th>
+                        <th data-options="field:'listprice',width:80,align:'right'">List Price</th>
+                        <th data-options="field:'unitcost',width:80,align:'right'">Unit Cost</th>
+                        <th data-options="field:'attr1',width:220">Attribute</th>
+                        <th data-options="field:'status',width:60,align:'center'">Status</th>
+                    </tr>
+                    </thead>
+                </table>
+            </td>
+            <td>
+                <a href="javascript:void(0)" class="btn toRightBt">&gt;&gt;</a>
+                <a href="javascript:void(0)" class="btn toLeftBt"> &lt;&lt;</a>
+            </td>
+            <td class="rightSide">
+                <table class="easyui-datagrid" title="CheckBox Selection on DataGrid" style="width:700px;height:250px"
+                       data-options="rownumbers:true,singleSelect:false,url:'',method:'get'">
+                    <thead>
+                    <tr>
+                        <th data-options="field:'ck',checkbox:true"></th>
+                        <th data-options="field:'itemid',width:80">Item ID</th>
+                        <th data-options="field:'productid',width:100">Product</th>
+                        <th data-options="field:'listprice',width:80,align:'right'">List Price</th>
+                        <th data-options="field:'unitcost',width:80,align:'right'">Unit Cost</th>
+                        <th data-options="field:'attr1',width:220">Attribute</th>
+                        <th data-options="field:'status',width:60,align:'center'">Status</th>
+                    </tr>
+                    </thead>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>

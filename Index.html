@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>CKTool Document</title>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <style>
+        h3{
+            margin-left:10px;
+        }
+        .temps a{
+            margin-left:30px;
+            display:inline-block;
+            line-height: 24px;
+            vertical-align: middle;
+        }
+        .temps img{
+            margin:3px 5px 0 0;
+        }
+
+        section{
+            padding:10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ibs">
+        <img src="http://www.flashpretty.com/check/images/logo.png"/>
+        <h2>Templates</h2>
+    </div>
+    <section>
+        <div class="temps">
+
+        </div>
+        <script>
+            $.get("Template.xml",function(templateXml){
+
+                var children = $(templateXml).children();
+                if(children.length==1){
+                  children = children.get(0).children;
+                }
+                $(children).each(function(i,t){
+                    var tag = $(t).get(0).tagName.toUpperCase();
+                    if(tag =="SEPARATE"){
+                        $('<h3>'+$(t).attr('name')+'</h3>').appendTo($('.temps'));
+                    }else if(tag == "ELEMENT"){
+                        $('<a href=\"'+$(t).attr('from')+'\">'+($(t).attr('icon')==""?"":"<img src=\"CKToolIcons/"+$(t).attr('icon')+"\"/>")+$(t).attr('name')+'</a>').appendTo($('.temps'));
+                    }
+                })
+            })
+        </script>
+    </section>
+
+    <h2>CKTool Features</h2>
+    <section>
+        <ul>
+            <li>Supply many Default Templates</li>
+            <li>Supply complex Data Grid and Chart Templates</li>
+            <li>Add yourself custom template easily</li>
+            <li>Base on Angularjs and Bootstrap</li>
+            <li>Support Jquery and Other third libery</li>
+            <li>Support Code Merge dynamically,Project's Size raising dynamically and it's minimum</li>
+            <li>Support Template code Erase and Move</li>
+        </ul>
+    </section>
+    <h2>CKTool Guide</h2>
+    <section>
+        <a href="TemplateModule.html">CKTool Guide</a>
+    </section>
+    <a href="TemplateModule.html">How to config CKTool Templates?</a>
+</body>
+</html>

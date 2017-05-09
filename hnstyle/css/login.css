@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*--- css reset ---*/
+body,div,a,img,ul,li,form,label,input{margin:0; padding:0;}
+body {background:#0b94da url(../images/login/loginbg.png) repeat-x top;}
+body,input{font-size:12px; font-family:aria, Tahoma, sans-serif; color:#333333; vertical-align:-2px;}
+ul {list-style: none;}
+a,label {text-decoration:none; color:#b2e5ff; cursor:pointer;}
+a:hover, .tips, label:hover, input.btnreset:hover {color:#ffff33;}
+a:focus,a:active, input:active,input:focus {outline:0; blr:expression(this.onFocus=this.blur());}
+img {vertical-align:middle; border:0;}
+input[type="checkbox"], .btnsubmit input, .btnreset {cursor:pointer;}
+
+#main {width:75%; min-width:800px; margin:14% auto 0 auto;}
+
+/*--- LOGO ---*/
+.logo {background:#0061a6; width:40%; height:260px; text-align:center; position:relative; float:left;}
+.logo img {margin-top:105px;}
+.logo .helps {position:absolute; bottom:5px; left:10px;}
+.logo .helps li {float:left;}
+.logo .helps a {display:block; padding:1px 0 0 20px; line-height:18px; height:18px;}
+.logo .helps .help a{background:url(../images/login/iconlogin.png) no-repeat 0 -49px; margin-right:20px;}
+.logo .helps .support a{background:url(../images/login/iconlogin.png) no-repeat 1px 1px;}
+/*--- Login ---*/
+.login {background:#0b5073; width:60%; vertical-align:top; height:260px; float:left;}
+.login .content {margin:0 20px 0 27%; float:left; width:200px;}
+.login .content .tips {height:20px; margin:55px 0 5px 0;}
+.login .content .inputtext {width:200px; height:30px; line-height:30px; background:#cceaff; margin-bottom:18px;}
+.login .content .inputtext span {color:#666666; margin-left:5px;}
+.login .content .inputtext input {background:#cceaff; border:0 none; width:140px; height:26px; line-height:26px; vertical-align:top; margin-top:2px;}
+.login .btnsubmit {float:left; margin-top:127px;}
+.login .btnsubmit input {background:#0b5073 url(../images/login/btn_arrow.png) no-repeat; height:36px; width:36px; border:0 none;}	
+.login .btnsubmit input:hover {background:#0b5073 url(../images/login/btn_arrowhover.png) no-repeat;}	
+.login .btnsubmit input:active {background:#0b5073 url(../images/login/btn_arrowhover.png) no-repeat 1px 1px \9;}	/* IE */
+.login .btnreset {background:url(../images/login/iconlogin.png) no-repeat 0 -147px; display:inline-block; padding:2px 0 0 15px; float:right; vertical-align:middle;}
+/*--- Footer ---*/
+#footer{color:#7fd4ff; text-align:right; padding-top:5px; clear:both; width:100%;}			  

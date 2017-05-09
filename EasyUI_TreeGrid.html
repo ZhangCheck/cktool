@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/easyuiIcon.css">
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/jquery.easyui.min.js" merge="No"></script>
+</head>
+<body>
+<div codeCk>
+    <table title="Folder Browser" class="easyui-treegrid" style="width:700px;height:250px"
+           data-options="
+				url: 'model/treegrid_data1.json',
+				method: 'get',
+				rownumbers: true,
+				idField: 'id',
+				treeField: 'name'
+			">
+        <thead>
+        <tr>
+            <th data-options="field:'name'" width="220">Name</th>
+            <th data-options="field:'size'" width="100" align="right">Size</th>
+            <th data-options="field:'date'" width="150">Modified Date</th>
+        </tr>
+        </thead>
+    </table>
+</div>
+</body>
+</html>

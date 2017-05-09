@@ -1,0 +1,158 @@
+<root>
+<separate name="Layout"></separate>
+    <element name="T-Layout" from="T-Layout.html" icon="CKToolIcons/TLayout.png"></element>
+    <element name="O-Layout" from="O-Layout.html" icon="CKToolIcons/OLayout.png"></element>
+    <element name="FullPageLayout" from="FullPage.html" icon="CKToolIcons/ScrollLayout.png"></element>
+    <!--<element name="ScrollLayout" from="ScrollLayout.html" icon="CKToolIcons/ScrollLayout.png"></element>-->
+    <element name="ScaleMobile" from="ScaleMobile.html" icon="CKToolIcons/ScaleMobile.png"></element>
+    <element name="BS_Grid" from="BootStrap_Grid.html" icon=""></element>
+
+<separate name="EasyUI"></separate>
+    <element name="Accordion" from="EasyUI_Accordion.html" icon="CKToolIcons/Accordion.png"></element>
+    <element name="Calendar" from="EasyUI_Calendar.html" icon="CKToolIcons/CalendarIcon.png"></element>
+    <element name="Combo" from="EasyUI_Combo.html" icon=""></element>
+    <element name="ComboBox" from="EasyUI_ComboBox.html" icon="CKToolIcons/ComboBox.png"></element>
+    <element name="CombogGrid" from="EasyUI_ComboGrid.html" icon=""></element>
+    <element name="ComboTree" from="EasyUI_ComboTree.html" icon=""></element>
+    <element name="DataGrid" from="EasyUI_DataGrid.html" icon="CKToolIcons/DataGrid.png"></element>
+    <element name="DataList" from="EasyUI_DataList.html" icon="CKToolIcons/List.png"></element>
+    <element name="DateBox" from="EasyUI_DateBox.html" icon="CKToolIcons/DateChooser.png"></element>
+    <element name="DatetimeBox" from="EasyUI_DatetimeBox.html" icon="CKToolIcons/Timepicker.png"></element>
+    <element name="DatetimeSpinner" from="EasyUI_DatetimeSpinner.html" icon="CKToolIcons/Spinner.png"></element>
+    <element name="Dialog" from="EasyUI_Dialog.html" icon=""></element>
+    <element name="Draggable" from="EasyUI_Draggable.html" icon=""></element>
+    <element name="Droppable" from="EasyUI_Droppable.html" icon=""></element>
+    <element name="EasyLoader" from="EasyUI_EasyLoader.html" icon=""></element>
+    <element name="FileBox" from="EasyUI_FileBox.html" icon=""></element>
+    <element name="Form" from="EasyUI_Form.html" icon="CKToolIcons/Form.png"></element>
+    <element name="Layout" from="EasyUI_Layout.html" icon=""></element>
+    <element name="LinkButton" from="EasyUI_LinkButton.html" icon="CKToolIcons/LinkButton.png"></element>
+    <element name="Menu" from="EasyUI_Menu.html" icon="CKToolIcons/Menu.png"></element>
+    <element name="MenuButton" from="EasyUI_MenuButton.html" icon=""></element>
+    <element name="Messager" from="EasyUI_Messager.html" icon=""></element>
+    <element name="NumberBox" from="EasyUI_NumberBox.html" icon=""></element>
+    <element name="NumberSpinner" from="EasyUI_NumberSpinner.html" icon="CKToolIcons/NumericStepper.png"></element>
+    <element name="Pagination" from="EasyUI_Pagination.html" icon="CKToolIcons/Pagination.png"></element>
+    <element name="Panel" from="EasyUI_Panel.html" icon="CKToolIcons/Panel.png"></element>
+    <element name="Progressbar" from="EasyUI_Progressbar.html" icon="CKToolIcons/ProgressBar.png"></element>
+    <element name="PropertyGrid" from="EasyUI_PropertyGrid.html" icon=""></element>
+    <element name="Resizable" from="EasyUI_Resizable.html" icon=""></element>
+    <element name="SearchBox" from="EasyUI_SearchBox.html" icon=""></element>
+    <element name="Slider" from="EasyUI_Slider.html" icon=""></element>
+    <element name="SplitButton" from="EasyUI_SplitButton.html" icon=""></element>
+    <element name="SwitchButton" from="EasyUI_SwitchButton.html" icon=""></element>
+    <element name="Tabs" from="EasyUI_Tabs.html" icon="CKToolIcons/TabBar.png"></element>
+    <element name="TextBox" from="EasyUI_TextBox.html" icon="CKToolIcons/TextInput.png"></element>
+    <element name="TimeSpinner" from="EasyUI_TimeSpinner.html" icon=""></element>
+    <element name="ToolTip" from="EasyUI_ToolTip.html" icon="CKToolIcons/Tooltip.png"></element>
+    <element name="Tree" from="EasyUI_Tree.html" icon=""></element>
+    <element name="TreeGrid" from="EasyUI_TreeGrid.html" icon=""></element>
+    <element name="ValidateBox" from="EasyUI_ValidateBox.html" icon="CKToolIcons/Validate.png"></element>
+    <element name="Window" from="EasyUI_Window.html" icon="CKToolIcons/TitleWindow.png"></element>
+
+<separate name="Angular UI"></separate>
+    <element name="Angular" from="Angular.html" icon="CKToolIcons/Angular.png"></element>
+    <element name="Routing" from="Routing.html" icon="CKToolIcons/ViewStack.png"></element>
+    <element name="Accordion" from="Accordion.html" icon="CKToolIcons/Accordion.png"></element>
+    <element name="Alert" from="Alert.html" icon="CKToolIcons/ErrorIndicator.png"></element>
+    <element name="Button" from="Button.html" icon="CKToolIcons/Button.png"></element>
+    <element name="IconButton" from="IconButton.html" icon="CKToolIcons/IconButton.png"></element>
+    <element name="RadioButton" from="RadioButton.html" icon="CKToolIcons/RadioButton.png"></element>
+    <element name="CheckBox" from="CheckBox.html" icon="CKToolIcons/CheckBox.png"></element>
+    <element name="Carousel" from="Carousel.html" icon="CKToolIcons/Carousel.png"></element>
+    <element name="Collapse" from="Collapse.html" icon="CKToolIcons/Collapse.png"></element>
+    <element name="DatePicker" from="DatePicker.html" icon="CKToolIcons/DateChooser.png"></element>
+    <element name="DateField" from="DateField.html" icon="CKToolIcons/DateField.png"></element>
+    <element name="Dropdown" from="Dropdown.html" icon="CKToolIcons/DropDownList.png"></element>
+
+    <element name="Grid" from="Grid.html" icon="CKToolIcons/DataGrid.png"></element>
+    <element name="Modal" from="Modal.html" icon="CKToolIcons/Panel.png"></element>
+    <element name="Pagination" from="Pagination.html" icon="CKToolIcons/Pagination.png"></element>
+    <element name="Popover" from="Popover.html" icon="CKToolIcons/Popover.png"></element>
+    <element name="Progressbar" from="Progressbar.html" icon="CKToolIcons/ProgressBar.png"></element>
+    <element name="Rating" from="Rating.html" icon="CKToolIcons/Rating.png"></element>
+    <element name="Tabs" from="Tabs.html" icon="CKToolIcons/TabNavigator.png"></element>
+    <element name="TimePicker" from="TimePicker.html" icon="CKToolIcons/Timepicker.png"></element>
+    <element name="Tooltip" from="Tooltip.html" icon="CKToolIcons/Tooltip.png"></element>
+    <element name="Typeahead" from="Typeahead.html" icon="CKToolIcons/Typeahead.png"></element>
+    <element name="Upload" from="Upload.html" icon="CKToolIcons/Upload.png"></element>
+    <element name="Video" from="Video.html" icon="CKToolIcons/VideoDisplay.png"></element>
+
+<separate name="Charts"></separate>
+    <element name="LineChart" from="ChartLine.html" icon="CKToolIcons/LineChart.png"></element>
+    <element name="BarChart" from="ChartBar.html" icon="CKToolIcons/ColumnChart.png"></element>
+    <element name="PieChart" from="ChartPie.html" icon="CKToolIcons/PieChart.png"></element>
+    <element name="DoughnutChart" from="ChartDoughnut.html" icon="CKToolIcons/DouphnutChart.png"></element>
+    <element name="RadarChart" from="ChartRadar.html" icon="CKToolIcons/RadarChart.png"></element>
+    <element name="PolarAreaChart" from="ChartPolarArea.html" icon="CKToolIcons/PolarAreaChart.png"></element>
+
+<separate name="Bootstrap UI"></separate>
+    <element name="Button" from="BS_Button.html" icon="CKToolIcons/Button.png"></element>
+    <element name="JustifyLayout" from="JustifyLayout.html"></element>
+    <element name="InlineBlockLayout" from="InlineBlock.html"></element>
+    <element name="Form" from="Form.html" icon="CKToolIcons/Form.png"></element>
+    <element name="Dropdown" from="BS_Dropdown.html" icon="CKToolIcons/DropDownList.png"></element>
+    <element name="Modal" from="BS_Modal.html" icon="CKToolIcons/Panel.png"></element>
+    <element name="Validator" from="Validator.html" icon="CKToolIcons/Validate.png"></element>
+    <element name="Video" from="Video.html" icon="CKToolIcons/VideoDisplay.png"></element>
+    <element name="Menu" from="BS_Menu.html" icon="CKToolIcons/Menu.png"></element>
+    <element name="Popover" from="BS_Popover.html" icon="CKToolIcons/Popover.png"></element>
+    <element name="PopVideo" from="PopVideo.html" icon="CKToolIcons/Popvideo.png"></element>
+    <element name="Tabs" from="BS_Tabs.html" icon="CKToolIcons/TabNavigator.png"></element>
+    <element name="Tooltip" from="BS_Tooltip.html" icon="CKToolIcons/Tooltip.png"></element>
+
+<separate name="Others"></separate>
+    <element name="Validate" from="Validate.html" icon="CKToolIcons/Validate.png"></element>
+    <element name="Flash" from="Flash.html" icon="CKToolIcons/flashplayer.png"></element>
+    <element name="Font" from="Font.html" icon="CKToolIcons/Label.png"></element>
+    <element name="TrimImg" from="AutoTrimImg.html" icon="CKToolIcons/AutoTrimImg.png"></element>
+    <element name="FlexSlider" from="FlexSlider.html" icon="CKToolIcons/Carousel.png"></element>
+
+<separate name="Project HeNan"></separate>
+    <element name="FormLayout" from="HeNan_FormLayout.html" icon="CKToolIcons/Form.png"></element>
+    <element name="Button" from="HeNan_Button.html" icon="CKToolIcons/Button.png"></element>
+    <element name="Accordion" from="HeNan_Accordion.html" icon="CKToolIcons/Accordion.png"></element>
+    <element name="Calendar" from="HeNan_Calendar.html" icon="CKToolIcons/CalendarIcon.png"></element>
+    <element name="Combo" from="HeNan_Combo.html" icon=""></element>
+    <element name="ComboBox" from="HeNan_ComboBox.html" icon="CKToolIcons/ComboBox.png"></element>
+    <element name="CombogGrid" from="HeNan_ComboGrid.html" icon="CKToolIcons/ComboGrid.png"></element>
+    <element name="ComboTree" from="HeNan_ComboTree.html" icon="CKToolIcons/ComboTree.png"></element>
+    <element name="DataGrid" from="HeNan_DataGrid.html" icon="CKToolIcons/DataGrid.png"></element>
+   <!-- <element name="DataList" from="HeNan_DataList.html" icon="CKToolIcons/List.png"></element>-->
+    <element name="DateBox" from="HeNan_DateBox.html" icon="CKToolIcons/DateChooser.png"></element>
+    <element name="DatetimeBox" from="HeNan_DatetimeBox.html" icon="CKToolIcons/Timepicker.png"></element>
+    <element name="DatetimeSpinner" from="HeNan_DatetimeSpinner.html" icon="CKToolIcons/Spinner.png"></element>
+    <element name="Dialog" from="HeNan_Dialog.html" icon="CKToolIcons/Dialog.png"></element>
+    <element name="Draggable" from="HeNan_Draggable.html" icon=""></element>
+    <element name="Droppable" from="HeNan_Droppable.html" icon=""></element>
+    <!--<element name="EasyLoader" from="HeNan_EasyLoader.html" icon=""></element>-->
+    <element name="FileBox" from="HeNan_FileBox.html" icon="CKToolIcons/File.png"></element>
+    <!--<element name="Form" from="HeNan_Form.html" icon="CKToolIcons/Form.png"></element>-->
+    <element name="Layout" from="HeNan_Layout.html" icon=""></element>
+    <!--<element name="LinkButton" from="HeNan_LinkButton.html" icon="CKToolIcons/LinkButton.png"></element>-->
+    <element name="Menu" from="HeNan_Menu.html" icon="CKToolIcons/Menu.png"></element>
+    <element name="MenuButton" from="HeNan_MenuButton.html" icon=""></element>
+    <element name="Messager" from="HeNan_Messager.html" icon=""></element>
+    <element name="NumberBox" from="HeNan_NumberBox.html" icon=""></element>
+    <element name="NumberSpinner" from="HeNan_NumberSpinner.html" icon="CKToolIcons/NumericStepper.png"></element>
+    <element name="Pagination" from="HeNan_Pagination.html" icon="CKToolIcons/Pagination.png"></element>
+    <element name="Panel" from="HeNan_Panel.html" icon="CKToolIcons/Panel.png"></element>
+    <element name="Progressbar" from="HeNan_Progressbar.html" icon="CKToolIcons/ProgressBar.png"></element>
+    <element name="PropertyGrid" from="HeNan_PropertyGrid.html" icon=""></element>
+    <element name="Resizable" from="HeNan_Resizable.html" icon=""></element>
+    <element name="SearchBox" from="HeNan_SearchBox.html" icon=""></element>
+    <element name="Slider" from="HeNan_Slider.html" icon=""></element>
+    <!--<element name="SplitButton" from="HeNan_SplitButton.html" icon=""></element>-->
+    <!--<element name="SwitchButton" from="HeNan_SwitchButton.html" icon=""></element>-->
+    <element name="Tabs" from="HeNan_Tabs.html" icon="CKToolIcons/TabBar.png"></element>
+    <element name="TextBox" from="HeNan_TextBox.html" icon="CKToolIcons/TextInput.png"></element>
+    <element name="TimeSpinner" from="HeNan_TimeSpinner.html" icon=""></element>
+    <element name="ToolTip" from="HeNan_ToolTip.html" icon="CKToolIcons/Tooltip.png"></element>
+    <element name="Tree" from="HeNan_Tree.html" icon="CKToolIcons/Tree.png"></element>
+    <element name="Tree Checkbox" from="HeNan_TreeCheckbox.html" icon="TreeCheckbox"></element>
+    <element name="TreeGrid" from="HeNan_TreeGrid.html" icon="CKToolIcons/TreeGrid.png"></element>
+    <element name="ValidateBox" from="HeNan_ValidateBox.html" icon="CKToolIcons/Validate.png"></element>
+    <element name="Window" from="HeNan_Window.html" icon="CKToolIcons/TitleWindow.png"></element>
+    <element name="LeftRight" from="HeNan_LeftRight.html" icon="CKToolIcons/LeftRight.png"></element>
+    <element name="LeftRight" from="HeNan_LeftRight.html" icon="CKToolIcons/LeftRight.png"></element>
+</root>

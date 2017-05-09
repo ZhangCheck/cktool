@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Tabs</title>
+    <link rel="stylesheet" href="css/core.css" merge="Main"/>
+    <link rel="stylesheet" href="css/component-animations.css"/>
+    <link rel="stylesheet" href="css/buttons.css"/>
+    <link rel="stylesheet" href="css/glyphicons.css"/>
+    <link rel="stylesheet" href="css/navs.css"/>
+
+    <script src="js/angular.js"  merge="No"></script>
+    <script src="js/Core.js" merge="Main"></script>
+    <script src="js/Tabs.js" eraseble="true"></script>
+    <script src="js/TabsDemo.js" eraseble="true" merge="project"></script>
+</head>
+<body>
+<h3>Tabs</h3>
+<div codeCk>
+    <div ng-controller="TabsDemoCtrl">
+        <p>Select a tab by setting active binding to true:</p>
+        <p>
+            <button class="btn btn-default btn-sm" ng-click="tabs[0].active = true">Select second tab</button>
+            <button class="btn btn-default btn-sm" ng-click="tabs[1].active = true">Select third tab</button>
+        </p>
+        <p>
+            <button class="btn btn-default btn-sm" ng-click="tabs[1].disabled = ! tabs[1].disabled">Enable / Disable third tab</button>
+        </p>
+        <hr />
+
+        <tabset>
+            <tab heading="Static title">Static content</tab>
+            <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disable="tab.disabled">
+                {{tab.content}}
+            </tab>
+            <tab select="alertMe()">
+                <tab-heading>
+                    <i class="glyphicon glyphicon-bell"></i> Alert!
+                </tab-heading>
+                I've got an HTML heading, and a select callback. Pretty cool!
+            </tab>
+        </tabset>
+
+        <hr />
+
+        <tabset vertical="true" type="pills">
+            <tab heading="Vertical 1">Vertical content 1</tab>
+            <tab heading="Vertical 2">Vertical content 2</tab>
+        </tabset>
+
+        <hr />
+
+        <tabset justified="true">
+            <tab heading="Justified">Justified content</tab>
+            <tab heading="SJ">Short Labeled Justified content</tab>
+            <tab heading="Long Justified">Long Labeled Justified content</tab>
+        </tabset>
+    </div>
+</div>
+</body>
+</html>

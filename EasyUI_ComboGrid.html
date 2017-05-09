@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/easyui.css">
+    <link rel="stylesheet" type="text/css" href="css/easyuiIcon.css">
+    <script src="js/jquery-1.11.3.min.js" merge="No"></script>
+    <script src="js/jquery.easyui.min.js" merge="No"></script>
+	<meta file src="model/datagrid_data1.json">
+</head>
+<body>
+<div codeCk>
+    <select class="easyui-combogrid" style="width:250px" data-options="
+			panelWidth: 500,
+			idField: 'itemid',
+			textField: 'productname',
+			url: 'model/datagrid_data1.json',
+			method: 'get',
+			columns: [[
+				{field:'itemid',title:'Item ID',width:80},
+				{field:'productname',title:'Product',width:120},
+				{field:'listprice',title:'List Price',width:80,align:'right'},
+				{field:'unitcost',title:'Unit Cost',width:80,align:'right'},
+				{field:'attr1',title:'Attribute',width:200},
+				{field:'status',title:'Status',width:60,align:'center'}
+			]],
+			fitColumns: true
+		">
+    </select>
+</div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+div[argumentCk] {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+}
+div[argumentCk] .argBtn {
+  border: solid 1px #888888;
+  padding: 10px;
+  cursor: pointer;
+  background: #fff;
+  display: inline-block;
+  border-radius: 3px;
+}
+div[argumentCk] h3,
+div[argumentCk] h4 {
+  line-height: 30px;
+  margin-left: 0;
+}
+div[argumentCk] .argGlobalBts {
+  float: right;
+}
+xmp[codeCk],
+xmp[templateCk],
+textarea[codeCk] {
+  display: none;
+  width: 100%;
+  min-height: 300px;
+}
+xmp[codeCk] {
+  background: #fff;
+}

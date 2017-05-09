@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+@import "reset.css";
+@import "base.css";
+/* @import "../../Easyui/themes/icon.css"; */
+/* @import "../../Easyui/themes/easyui.css"; */
+
+.tableborder { position:relative;/* height: 478px;overflow: auto; */}
+.tableborder .btnwin {}
+
+/*--- 个人档案审核本次变更历史 ---*/
+.grdachangehis {width:740px; margin:10px auto;}
+.grdachangehis {border-spacing:0px 0px; border-collapse:separate;}
+.grdachangehis {
+	border-top-width: 1px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 1px;
+	border-top-style: dotted;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: dotted;
+	border-top-color: #cccccc;
+	border-left-color: #cccccc;
+}
+.grdachangehis td {
+	border-bottom:1px dotted #cccccc;
+	border-right:1px dotted #cccccc;
+	padding-bottom:3px;
+	color:#004d99;
+	overflow:hidden;
+	line-height: 22px;
+}
+.grdachangehis .title {display:inline-block; text-align:right; min-width:110px; color:#888888; font-weight:normal; float:left;}
+.grdachangehis label {display:block; float:left;}
+.grdachangehis td[colspan="2"] label {width:580px;}
+.grdachangehis .title-ver {
+	width:22px;
+	line-height:16px;
+	padding:5px;
+	color:#333333;
+	text-align:center;
+	font-weight:bold;
+	background-color: #dddddd;
+}
+.grdachangehis .title-hor{
+	color:#333333;
+	background-color: #dddddd;
+	height: 24px;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+	width: 48%;
+}
+.grdanone {color:#666666; font-size:14px; text-align:center; padding:20px 0;}
