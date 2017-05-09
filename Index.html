@@ -45,7 +45,7 @@
                     if(tag =="SEPARATE"){
                         $('<h3>'+$(t).attr('name')+'</h3>').appendTo($('.temps'));
                     }else if(tag == "ELEMENT"){
-                        $('<a href=\"'+$(t).attr('from')+'\">'+($(t).attr('icon')==""?"":"<img src=\"CKToolIcons/"+$(t).attr('icon')+"\"/>")+$(t).attr('name')+'</a>').appendTo($('.temps'));
+                        $('<a href=\"'+$(t).attr('from')+'\">'+($(t).attr('icon')==""?"":"<img src=\""+$(t).attr('icon')+"\"/>")+$(t).attr('name')+'</a>').appendTo($('.temps'));
                     }
                 })
             })
